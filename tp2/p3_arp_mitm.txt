@@ -1,0 +1,155 @@
+12:32:04.926233 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:06.930128 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:08.938349 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:10.938594 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:11.477758 DTPv1, length 26
+12:32:11.477758 aa:bb:cc:00:01:01 (oui Unknown) > 01:00:0c:00:00:00 (oui Unknown) SNAP, oui Cisco (0x00000c), pid Unknown (0x0003), length 68: 
+	0x0000:  aaaa 0300 000c 0003 0000 0000 0100 0ccc  ................
+	0x0010:  cccc aabb cc00 0101 0022 aaaa 0300 000c  ........."......
+	0x0020:  2004 0100 0100 0500 0002 0005 0400 0300  ................
+	0x0030:  0540 0004 000a aabb cc00 0101 0000 0000  .@..............
+	0x0040:  0000 0000 0000 0000 d1ff 11bb            ............
+12:32:12.533922 IP 0.0.0.0.bootpc > 255.255.255.255.bootps: BOOTP/DHCP, Request from 00:50:79:66:68:05 (oui Unknown), length 364
+12:32:12.534157 IP 10.2.1.134.bootps > 10.2.1.233.bootpc: BOOTP/DHCP, Reply, length 300
+12:32:12.537784 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:12.538007 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:12.829255 IP 10.2.1.134.36146 > one.one.one.one.domain: 45092+ PTR? 255.255.255.255.in-addr.arpa. (46)
+12:32:12.870042 IP one.one.one.one.domain > 10.2.1.134.36146: 45092 NXDomain 0/0/0 (46)
+12:32:12.870280 IP 10.2.1.134.56005 > one.one.one.one.domain: 1171+ PTR? 0.0.0.0.in-addr.arpa. (38)
+12:32:12.910518 IP one.one.one.one.domain > 10.2.1.134.56005: 1171 NXDomain 0/0/0 (38)
+12:32:12.910841 IP 10.2.1.134.42047 > one.one.one.one.domain: 27330+ PTR? 233.1.2.10.in-addr.arpa. (41)
+12:32:12.942974 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:12.951165 IP one.one.one.one.domain > 10.2.1.134.42047: 27330 NXDomain 0/0/0 (41)
+12:32:12.951350 IP 10.2.1.134.49927 > one.one.one.one.domain: 64781+ PTR? 134.1.2.10.in-addr.arpa. (41)
+12:32:12.992877 IP one.one.one.one.domain > 10.2.1.134.49927: 64781 NXDomain 0/0/0 (41)
+12:32:12.993219 IP 10.2.1.134.53083 > one.one.one.one.domain: 19498+ PTR? 166.1.2.10.in-addr.arpa. (41)
+12:32:13.032256 IP one.one.one.one.domain > 10.2.1.134.53083: 19498 NXDomain 0/0/0 (41)
+12:32:13.032489 IP 10.2.1.134.39697 > one.one.one.one.domain: 20232+ PTR? 253.1.2.10.in-addr.arpa. (41)
+12:32:13.064040 IP one.one.one.one.domain > 10.2.1.134.39697: 20232 NXDomain 0/0/0 (41)
+12:32:13.533808 IP 0.0.0.0.bootpc > 255.255.255.255.bootps: BOOTP/DHCP, Request from 00:50:79:66:68:05 (oui Unknown), length 364
+12:32:13.542212 IP 10.2.1.134.bootps > 10.2.1.233.bootpc: BOOTP/DHCP, Reply, length 300
+12:32:13.573706 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:13.574033 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:13.853208 IP 10.2.1.134.53462 > one.one.one.one.domain: 50550+ PTR? 1.1.1.1.in-addr.arpa. (38)
+12:32:13.886513 IP one.one.one.one.domain > 10.2.1.134.53462: 50550 1/0/0 PTR one.one.one.one. (67)
+12:32:14.534226 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:14.534623 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:14.597716 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:14.597716 ARP, Request who-has 10.2.1.166 tell 10.2.1.253, length 46
+12:32:14.948240 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:15.535386 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:15.535386 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:16.536211 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:16.536479 ARP, Request who-has 10.2.1.233 (Broadcast) tell 10.2.1.233, length 50
+12:32:16.955009 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:17.981094 ARP, Request who-has 10.2.1.254 tell 10.2.1.134, length 28
+12:32:17.991062 ARP, Reply 10.2.1.254 is-at ca:01:08:54:00:00 (oui Unknown), length 46
+12:32:18.748946 ARP, Request who-has 10.2.1.233 tell 10.2.1.134, length 28
+12:32:18.750101 ARP, Reply 10.2.1.233 is-at 00:50:79:66:68:05 (oui Unknown), length 46
+12:32:18.955734 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:18.973174 IP 10.2.1.134.38288 > one.one.one.one.domain: 12252+ PTR? 254.1.2.10.in-addr.arpa. (41)
+12:32:19.010469 IP one.one.one.one.domain > 10.2.1.134.38288: 12252 NXDomain 0/0/0 (41)
+12:32:20.963754 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:22.968184 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:24.969360 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:26.971927 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:28.980237 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:30.981893 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+12:32:32.984348 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:11.230454 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:11.805558 DTPv1, length 26
+13:12:11.805558 aa:bb:cc:00:01:01 (oui Unknown) > 01:00:0c:00:00:00 (oui Unknown) SNAP, oui Cisco (0x00000c), pid Unknown (0x0003), length 68: 
+	0x0000:  aaaa 0300 000c 0003 0000 0000 0100 0ccc  ................
+	0x0010:  cccc aabb cc00 0101 0022 aaaa 0300 000c  ........."......
+	0x0020:  2004 0100 0100 0500 0002 0005 0400 0300  ................
+	0x0030:  0540 0004 000a aabb cc00 0101 0000 0000  .@..............
+	0x0040:  0000 0000 0000 0000 d1ff 11bb            ............
+13:12:13.113705 CDPv2, ttl: 180s, Device-ID 'IOU1', length 405
+13:12:13.234632 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:15.239583 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:17.242911 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:19.242794 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:20.911907 ARP, Request who-has 10.2.1.134 (Broadcast) tell 10.2.1.233, length 50
+13:12:20.911927 ARP, Reply 10.2.1.134 is-at 08:00:27:f3:65:76 (oui Unknown), length 28
+13:12:20.912130 ARP, Request who-has 10.2.1.134 (Broadcast) tell 10.2.1.233, length 50
+13:12:20.912139 ARP, Reply 10.2.1.134 is-at 08:00:27:f3:65:76 (oui Unknown), length 28
+13:12:20.914118 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 33826, seq 1, length 64
+13:12:20.914151 IP 10.2.1.134 > 10.2.1.233: ICMP redirect one.one.one.one to host 10.2.1.254, length 92
+13:12:20.914187 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 33826, seq 1, length 64
+13:12:20.925258 IP 10.2.1.134.37112 > one.one.one.one.domain: 58767+ PTR? 134.1.2.10.in-addr.arpa. (41)
+13:12:20.939186 ARP, Request who-has 10.2.1.233 tell 10.2.1.254, length 46
+13:12:20.939630 ARP, Request who-has 10.2.1.233 tell 10.2.1.254, length 46
+13:12:20.959274 IP one.one.one.one.domain > 10.2.1.134.37112: 58767 NXDomain 0/0/0 (41)
+13:12:20.959507 IP 10.2.1.134.42023 > one.one.one.one.domain: 29470+ PTR? 233.1.2.10.in-addr.arpa. (41)
+13:12:21.000103 IP one.one.one.one.domain > 10.2.1.134.42023: 29470 NXDomain 0/0/0 (41)
+13:12:21.000499 IP 10.2.1.134.41334 > one.one.one.one.domain: 5429+ PTR? 1.1.1.1.in-addr.arpa. (38)
+13:12:21.040086 IP one.one.one.one.domain > 10.2.1.134.41334: 5429 1/0/0 PTR one.one.one.one. (67)
+13:12:21.040381 IP 10.2.1.134.58997 > one.one.one.one.domain: 13685+ PTR? 254.1.2.10.in-addr.arpa. (41)
+13:12:21.080612 IP one.one.one.one.domain > 10.2.1.134.58997: 13685 NXDomain 0/0/0 (41)
+13:12:21.243031 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:21.950136 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 34082, seq 2, length 64
+13:12:21.950179 IP 10.2.1.134 > 10.2.1.233: ICMP redirect one.one.one.one to host 10.2.1.254, length 92
+13:12:21.950198 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 34082, seq 2, length 64
+13:12:22.992418 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 34338, seq 3, length 64
+13:12:22.992446 IP 10.2.1.134 > 10.2.1.233: ICMP redirect one.one.one.one to host 10.2.1.254, length 92
+13:12:22.992459 IP 10.2.1.233 > one.one.one.one: ICMP echo request, id 34338, seq 3, length 64
+13:12:23.243662 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:25.251399 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:25.916958 ARP, Request who-has 10.2.1.254 tell 10.2.1.134, length 28
+13:12:25.917030 ARP, Request who-has 10.2.1.233 tell 10.2.1.134, length 28
+13:12:25.918296 ARP, Reply 10.2.1.233 is-at 00:50:79:66:68:05 (oui Unknown), length 46
+13:12:25.920281 ARP, Reply 10.2.1.254 is-at ca:01:08:54:00:00 (oui Unknown), length 46
+13:12:27.251063 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:29.252019 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:31.255736 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:33.259992 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:35.259939 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:37.263504 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:39.268270 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:41.271985 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:41.810967 DTPv1, length 26
+13:12:41.811044 aa:bb:cc:00:01:01 (oui Unknown) > 01:00:0c:00:00:00 (oui Unknown) SNAP, oui Cisco (0x00000c), pid Unknown (0x0003), length 68: 
+	0x0000:  aaaa 0300 000c 0003 0000 0000 0100 0ccc  ................
+	0x0010:  cccc aabb cc00 0101 0022 aaaa 0300 000c  ........."......
+	0x0020:  2004 0100 0100 0500 0002 0005 0400 0300  ................
+	0x0030:  0540 0004 000a aabb cc00 0101 0001 0809  .@..............
+	0x0040:  0a0b 0c0d 0e0f 1011 eb98 8f12            ............
+13:12:43.272628 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:45.276658 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:47.280392 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:49.284895 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:51.286730 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:53.288405 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:55.294530 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:57.298349 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:12:59.301070 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:01.307454 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:03.311416 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:05.313529 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:07.313765 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:08.143314 IP 10.2.1.233.61682 > one.one.one.one.domain: 47663+ A? efrei.fr. (26)
+13:13:08.143348 IP 10.2.1.134 > 10.2.1.233: ICMP redirect one.one.one.one to host 10.2.1.254, length 62
+13:13:08.143371 IP 10.2.1.233.61682 > one.one.one.one.domain: 47663+ A? efrei.fr. (26)
+13:13:08.234405 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46114, seq 1, length 64
+13:13:08.234437 IP 10.2.1.134 > 10.2.1.233: ICMP redirect kks1145.kokiris.net to host 10.2.1.254, length 92
+13:13:08.234454 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46114, seq 1, length 64
+13:13:09.053205 IP 10.2.1.134.34483 > one.one.one.one.domain: 47184+ PTR? 203.229.210.51.in-addr.arpa. (45)
+13:13:09.127550 IP one.one.one.one.domain > 10.2.1.134.34483: 47184 1/0/0 PTR kks1145.kokiris.net. (78)
+13:13:09.274927 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46370, seq 2, length 64
+13:13:09.274974 IP 10.2.1.134 > 10.2.1.233: ICMP redirect kks1145.kokiris.net to host 10.2.1.254, length 92
+13:13:09.274993 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46370, seq 2, length 64
+13:13:09.317835 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:10.300685 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46626, seq 3, length 64
+13:13:10.300716 IP 10.2.1.134 > 10.2.1.233: ICMP redirect kks1145.kokiris.net to host 10.2.1.254, length 92
+13:13:10.300734 IP 10.2.1.233 > kks1145.kokiris.net: ICMP echo request, id 46626, seq 3, length 64
+13:13:11.317821 STP 802.1d, Config, Flags [none], bridge-id 8001.aa:bb:cc:00:01:00.8005, length 35
+13:13:11.814047 DTPv1, length 26
+13:13:11.814047 aa:bb:cc:00:01:01 (oui Unknown) > 01:00:0c:00:00:00 (oui Unknown) SNAP, oui Cisco (0x00000c), pid Unknown (0x0003), length 68: 
+	0x0000:  aaaa 0300 000c 0003 0000 0000 0100 0ccc  ................
+	0x0010:  cccc aabb cc00 0101 0022 aaaa 0300 000c  ........."......
+	0x0020:  2004 0100 0100 0500 0002 0005 0400 0300  ................
+	0x0030:  0540 0004 000a aabb cc00 0101 0186 0000  .@..............
+	0x0040:  0000 0000 0000 0000 624c e0bf            ........bL..
+13:13:12.293430 CDPv2, ttl: 180s, Device-ID 'IOU1', length 405
+
+
