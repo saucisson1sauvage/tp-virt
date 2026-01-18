@@ -1,0 +1,335 @@
+### Matys philipon - gouin tp 1
+
+
+
+
+## 🌞 Déterminer l'adresse MAC de vos deux machines
+
+
+```
+PC1> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.1.1.1/24          0.0.0.0           00:50:79:66:68:00  10000  127.0.0.1:10001
+      fe80::250:79ff:fe66:6800/64
+
+
+PC2> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC2    10.1.1.2/24          0.0.0.0           00:50:79:66:68:01  10004  127.0.0.1:10005
+      fe80::250:79ff:fe66:6801/64     
+```
+
+
+## 🌞 Définir une IP statique sur les deux machines
+
+
+```
+PC1> ip 10.1.1.1/24
+Checking for duplicate address...
+PC1 : 10.1.1.1 255.255.255.0
+
+
+PC2> ip 10.1.1.2/24
+Checking for duplicate address...
+PC2 : 10.1.1.2 255.255.255.0
+```
+
+
+## 🌞 Proof !
+
+
+```
+PC1> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.1.1.1/24          0.0.0.0           00:50:79:66:68:00  10000  127.0.0.1:10001
+      fe80::250:79ff:fe66:6800/64
+
+
+PC2> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC2    10.1.1.2/24          0.0.0.0           00:50:79:66:68:01  10004  127.0.0.1:10005
+      fe80::250:79ff:fe66:6801/64     
+```
+
+
+
+
+
+
+## 🌞 Effectuer un ping d'une machine à l'autre
+
+
+```
+PC1> ping 10.1.1.2
+
+
+84 bytes from 10.1.1.2 icmp_seq=1 ttl=64 time=0.781 ms
+84 bytes from 10.1.1.2 icmp_seq=2 ttl=64 time=0.876 ms
+```
+
+
+## 🌞 Protocolz ?
+
+
+ICMP
+
+
+
+
+## 🌞 Déterminer l'adresse MAC de vos trois machines
+
+
+## 🌞 Définir une IP statique sur les trois machines
+```
+PC1> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.1.1.1/24          0.0.0.0           00:50:79:66:68:00  10000  127.0.0.1:10001
+      fe80::250:79ff:fe66:6800/64
+
+
+PC2> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC2    10.1.1.2/24          0.0.0.0           00:50:79:66:68:01  10004  127.0.0.1:10005
+      fe80::250:79ff:fe66:6801/64 
+
+
+PC3> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC3    10.1.1.3/24          0.0.0.0           00:50:79:66:68:02  10006  127.0.0.1:10007
+      fe80::250:79ff:fe66:6802/64
+```
+
+
+
+
+## 🌞 Effectuer des ping d'une machine à l'autre
+
+
+
+
+```
+PC1> ping 10.1.1.2
+
+
+84 bytes from 10.1.1.2 icmp_seq=1 ttl=64 time=1.062 ms
+
+
+PC1> ping 10.1.1.3
+
+
+84 bytes from 10.1.1.3 icmp_seq=1 ttl=64 time=0.603 ms
+
+
+PC2> ping 10.1.1.3
+
+
+84 bytes from 10.1.1.3 icmp_seq=1 ttl=64 time=1.093 ms
+```
+
+
+
+
+## 🌞 Afficher la table ARP de node1
+
+
+
+
+```
+
+
+PC1> show arp
+
+
+00:50:79:66:68:01  10.1.1.2 expires in 20 seconds
+00:50:79:66:68:02  10.1.1.3 expires in 25 seconds
+
+
+```
+
+
+
+
+## 🌞 Installer un serveur DHCP
+
+
+```
+[root@efrei-xmg4agau1 saus]# dnf -y install dnsmasq
+
+
+interface=enp0s3
+dhcp-range=10.1.1.10,10.1.1.100,24h
+dhcp-option=3,10.1.1.253
+dhcp-option=6,8.8.8.8
+dhcp-authoritative
+log-dhcp
+port=0
+
+
+sudo systemctl start dnsmasq
+sudo systemctl enable dnsmasq
+
+
+```
+
+
+## 🌞 Récupérer une IP automatiquement depuis les 3 nodes
+
+
+```
+PC1> ip 10.1.1.1
+Checking for duplicate address...
+PC1 : 10.1.1.1 255.255.255.0
+
+
+PC1> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.1.1.1/24          0.0.0.0           00:50:79:66:68:00  10000  127.0.0.1:10001
+      fe80::250:79ff:fe66:6800/64
+
+
+PC1> dhcp
+DORA IP 10.1.1.45/24 GW 10.1.1.253
+
+
+PC1> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.1.1.45/24         10.1.1.253        00:50:79:66:68:00  10000  127.0.0.1:10001
+      fe80::250:79ff:fe66:6800/64
+
+
+PC2> ip 10.1.1.2
+Checking for duplicate address...
+PC2 : 10.1.1.2 255.255.255.0
+
+
+PC2> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC2    10.1.1.2/24          0.0.0.0           00:50:79:66:68:01  10004  127.0.0.1:10005
+      fe80::250:79ff:fe66:6801/64
+
+
+PC2> dhcp
+DDORA IP 10.1.1.46/24 GW 10.1.1.253
+
+
+PC2> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC2    10.1.1.46/24         10.1.1.253        00:50:79:66:68:01  10004  127.0.0.1:10005
+      fe80::250:79ff:fe66:6801/64
+
+
+
+
+PC3> ip 10.1.1.3
+Checking for duplicate address...
+PC3 : 10.1.1.3 255.255.255.0
+
+
+PC3> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC3    10.1.1.3/24          0.0.0.0           00:50:79:66:68:02  10006  127.0.0.1:10007
+      fe80::250:79ff:fe66:6802/64
+
+
+PC3> dhcp
+DORA IP 10.1.1.47/24 GW 10.1.1.253
+
+
+PC3> show
+
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC3    10.1.1.47/24         10.1.1.253        00:50:79:66:68:02  10006  127.0.0.1:10007
+      fe80::250:79ff:fe66:6802/64
+
+
+```
+
+
+## 🌞 Bail DHCP
+## 🌞 Use grep
+
+
+
+
+```
+cat /var/lib/dnsmasq/dnsmasq.leases | grep PC3
+```
+## 🌞 Installez et configurez un serveur DHCP 
+
+
+```
+[saus@localhost ~]$ dnf -y install dnsmasq
+
+
+interface=enp0s3
+dhcp-range=10.1.1.10,10.1.1.100,24h
+dhcp-option=3,10.1.1.253
+dhcp-option=6,8.8.8.8
+dhcp-authoritative
+log-dhcp
+port=0
+
+
+sudo systemctl start dnsmasq
+sudo systemctl enable dnsmasq
+```
+## 🌞 Test !
+```
+PC1> dhcp
+DDORA IP 10.1.1.245/24 GW 10.1.1.253
+```
+
+
+## 🌞 Proof !
+
+```
+PC1> arp
+
+arp table is empty
+
+
+PC1> arp
+
+08:00:27:ec:4c:17  10.1.1.253 expires in 120 seconds
+```
+## 🌞 Proof !
+
+```
+sudo arping -U -s 10.1.1.249 -I enp0s3 10.1.1.45
+```
+```
+
+PC1> arp
+
+08:00:27:ec:4c:17  10.1.1.250 expires in 117 seconds
+08:00:27:ec:4c:17  10.1.1.249 expires in 114 seconds
+08:00:27:ec:4c:17  10.1.1.248 expires in 120 seconds
+```
+
+
+
